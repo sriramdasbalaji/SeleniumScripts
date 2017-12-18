@@ -45,3 +45,6 @@ Start-Sleep -s 35
 # Remove the installer
 
 rm -Force $workdir\firefox*
+
+#copy geckodriver
+Invoke-WebRequest https://github.com/sriramdasbalaji/SeleniumScripts/blob/master/geckodriver.exe?raw=true -OutFile C:\Temp\geckodriver.exe
