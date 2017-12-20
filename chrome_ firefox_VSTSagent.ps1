@@ -52,8 +52,8 @@ Invoke-WebRequest https://github.com/sriramdasbalaji/SeleniumScripts/blob/master
 #Downlaod and extract VSTS windows agent
 mkdir C:\VSTSwinAgent ;
 Invoke-WebRequest https://vstsagentpackage.azureedge.net/agent/2.126.0/vsts-agent-win-x64-2.126.0.zip -OutFile C:\VSTSwinAgent\agent.zip
-#Expand-Archive C:\VSTSwinAgent\agent.zip -DestinationPath C:\VSTSwinAgent
-#Remove-Item –path C:\VSTSwinAgent\agent.zip
+Expand-Archive C:\VSTSwinAgent\agent.zip -DestinationPath C:\VSTSwinAgent
+Remove-Item –path C:\VSTSwinAgent\agent.zip
 # mkdir C:\VSTSwinAgent ; cd C:\VSTSwinAgent
 #Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$HOME\Downloads\vsts-agent-win-x64-2.126.0.zip", "$PWD")
 
